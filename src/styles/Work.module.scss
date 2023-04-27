@@ -1,0 +1,43 @@
+
+@import "../styles/variables.scss";
+
+.work{
+  border: 2px solid salmon;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 10rem;
+}
+
+.work > .title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 3rem;
+  border: 1px solid blue;
+
+}
+
+.work > .work1{
+    width: 100%;
+    border: 2px solid salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 40em;
+    margin-bottom: 4rem;
+
+  }
+
+
+
+
+
+  .work > .work1 h2{
+    font-family: $Overpass;
+  }
+
+
+  

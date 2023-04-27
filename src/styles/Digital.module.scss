@@ -1,0 +1,628 @@
+@import "../styles/variables.scss";
+@media (min-width:1400px) {
+.section2 {
+  background-color: rgb(167,188,169);
+  color: black;
+  border: 2px solid salmon;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.section1 {
+  border: 2px solid salmon;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  position: relative;
+  padding-bottom: 4rem;
+  h2 {
+    font-family: $Nexa;
+    font-size: 4.5em;
+  }
+}
+
+
+
+.section3 {
+  border: 2px solid salmon;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  position: relative;
+  padding-bottom: 4rem;
+
+}
+
+.section4 {
+  border: 2px solid salmon;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  position: relative;
+  padding-bottom: 4rem;
+
+}
+
+.section5_desk{
+  background-image: url("../images/gen05_001_a.png");
+  padding-bottom: 4rem;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  color: white;
+
+}
+
+.section5_mobile{
+  display: none;
+}
+
+.section1 >.img2 {
+  width: 200px;
+  padding-left: 4rem;
+}
+
+p {
+  font-family: $Overpass;
+  font-size: 12pt;
+  line-height: 30px;
+  font-weight: 200;
+  padding-top: 2rem;
+  padding-right: 4rem;
+}
+
+h2 {
+  font-size: 6em;
+  font-weight: 300;
+  text-align: left;
+  font-family: $Nexa;
+}
+
+.gen01 {
+  width: 700px;
+  padding-left: 1rem;
+  margin-left: 6rem;
+  align-items: flex-end;
+  align-items: bottom;
+
+}
+
+.gen02 {
+  width: 800px;
+  padding-left: 0rem;
+  align-items: center;
+  margin-top: -7rem;
+
+}
+
+.gen03 {
+  width: 700px;
+  padding-left: 1rem;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: -7rem;
+
+
+}
+
+.gen04 {
+  width: 700px;
+  padding-left: 1rem;
+  margin-left: 5rem;
+  align-items: flex-end;
+  align-items: bottom;
+}
+
+
+.label {
+  font-size: 1.6em;
+  border-color: white;
+  font-family: $Cutive;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2.2em;
+  font-weight: 100;
+  text-align: left;
+  margin-bottom: 2rem;
+
+}
+
+h3 {
+  .stitle {
+    font-family: $Overpass;
+    font-size: 0.6em;
+    margin-bottom: -1.5rem;
+  }
+}
+
+.work>.text h2 {
+  font-size: 5em;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-family: $Nexa;
+
+}
+
+.break {
+  content: "\a ";
+  white-space: pre;
+}
+
+.parent {
+  display: inline-flex;
+  align-self: left;
+  justify-items: left;
+  width: 100%;
+}
+
+.verticalrow_dark {
+  float: left;
+  height: 90px;
+  width: 1px;
+  /* edit this if you want */
+  background-color: black;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
+.verticalrow_light {
+  float: left;
+  height: 90px;
+  width: 1px;
+  /* edit this if you want */
+  background-color: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
+span {
+  display: inline;
+}
+
+span:before {
+  content: "\a ";
+  white-space: pre;
+  align-items: left;
+}
+
+
+.edition2 {
+  font-size: 1.8em;
+  font-weight: 100;
+  text-align: left;
+  margin-top: 1.5rem;
+  padding-right: 2rem;
+}
+
+
+
+h4 {
+  font-size: 2.4em;
+  font-weight: 100;
+  text-align: left;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+.text p {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.btn_dark_mobile{
+  display: none;
+}
+
+.btn_light_mobile{
+  display: none;
+}
+
+.btn_dark_desk {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  align-self: flex-end;
+
+  padding-right: 2.6rem;
+
+  a {
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    padding: 0.75rem 0.2rem;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    font-family: $Overpass;
+    background: transparent;
+    color: $dark;
+    border: 1px solid black;
+    transition: 0.3s ease all;
+    width: 100%;
+    margin-top: 2rem;
+
+  }
+
+  a:hover {
+    letter-spacing: 10px;
+    color: $dark;
+  }
+
+}
+
+.btn_light_desk {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: left;
+  padding-right: 2.6rem;
+
+  a {
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    padding: 0.75rem 0.2rem;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    font-family: $Overpass;
+    background: transparent;
+    color: $light;
+    border: 1px solid white;
+    transition: 0.3s ease all;
+    width: 100%;
+    margin-top: 2rem;
+
+  }
+
+  a:hover {
+    letter-spacing: 10px;
+    color: $light;
+  }
+
+}
+
+}
+@media (max-width:1400px) {
+  .section1 {
+    border: 2px solid salmon;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .section2 {
+    border: 2px solid salmon;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+    background-color: rgb(167,188,169);
+    color: black;
+  }
+
+  .section4{
+    border: 2px solid salmon;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .section3{
+    border: 2px solid salmon;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .section5_mobile {
+    background-image: url("../images/gen05_001_a.png");
+    border: 2px solid salmon;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color:white;
+  }
+
+
+
+.section5_desk{
+   display: none;
+  }
+
+  h2 {
+    font-family: $Nexa;
+    font-size: 5em;
+  }
+
+  .gen01 {
+    width: 380px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+
+  .gen02 {
+    width: 420px;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+  }
+
+
+  .gen03 {
+    width: 200px;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  
+  .gen04 {
+    width: 420px;
+
+  }
+
+  .conimage{
+    text-align: center;
+  }
+
+  .btn_work {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: left;
+    padding-right: 0rem;
+
+    a {
+      cursor: pointer;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      padding: 0.75rem 0.2rem;
+      margin-top: 10px;
+      outline: none;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      font-family: $Overpass;
+      background: transparent;
+      color: $dark;
+      border: 1px solid black;
+      transition: 0.3s ease all;
+      width: 100%;
+      margin-top: 2rem;
+
+    }
+    
+    a:hover {
+      letter-spacing: 10px;
+      color: $dark;
+    }
+
+  }
+  .btn_dark_desk{
+    display: none;
+  }
+
+  .btn_light_desk{
+    display: none;
+  }
+  .btn_dark_mobile {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: left;
+    padding-right: 0;
+    padding-bottom: 3rem;
+  
+    a {
+      cursor: pointer;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      padding: 0.75rem 0.2rem;
+      margin-top: 10px;
+      outline: none;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      font-family: $Overpass;
+      background: transparent;
+      color: $dark;
+      border: 1px solid black;
+      transition: 0.3s ease all;
+      width: 100%;
+      margin-top: 2rem;
+  
+    }
+  
+    a:hover {
+      letter-spacing: 10px;
+      color: $dark;
+    }
+  
+  }
+  .btn_light_mobile {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: left;
+    padding-right: 0rem;
+    padding-bottom: 3rem;
+  
+    a {
+      cursor: pointer;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      padding: 0.75rem 0.2rem;
+      margin-top: 10px;
+      outline: none;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      font-family: $Overpass;
+      background: transparent;
+      color: $light;
+      border: 1px solid white;
+      transition: 0.3s ease all;
+      width: 100%;
+      margin-top: 2rem;
+  
+    }
+  
+    a:hover {
+      letter-spacing: 10px;
+      color: $light;
+    }
+  
+  }
+  .label {
+    font-size: 1.6em;
+    border-color: white;
+    font-family: $Cutive;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 2.2em;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 2rem;
+  
+  }
+  
+  h3 {
+    .stitle {
+      font-family: $Overpass;
+      font-size: 0.6em;
+      margin-bottom: -1.5rem;
+    }
+  }
+  
+  .work>.text h2 {
+    font-size: 5em;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+    font-family: $Nexa;
+  
+  }
+  
+  .break {
+    content: "\a ";
+    white-space: pre;
+  }
+  
+  .parent {
+    display: inline-flex;
+    align-self: left;
+    justify-items: left;
+    width: 100%;
+  }
+  
+  .verticalrow_dark {
+    float: left;
+    height: 90px;
+    width: 1px;
+    /* edit this if you want */
+    background-color: black;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  
+  }
+  
+  .verticalrow_light {
+    float: left;
+    height: 90px;
+    width: 1px;
+    /* edit this if you want */
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  
+  }
+  span {
+    display: inline;
+  }
+  
+  span:before {
+    content: "\a ";
+    white-space: pre;
+    align-items: left;
+  }
+  
+  
+  .edition2 {
+    font-size: 1.4em;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  span {
+    display: inline;
+  }
+  
+  span:before {
+    content: "\a ";
+    white-space: pre;
+    align-items: left;
+  }
+
+  h2 {
+    font-family: $Nexa;
+    font-size: 3.5em;
+    padding-bottom: 1rem;
+  }
+
+  .gen01 {
+    width: 420px;
+    padding-left: 0rem;
+
+  }
+
+  .gen02 {
+    width: 420px;
+    padding-left: 0rem;
+  }
+
+
+  .gen03 {
+    width: 420px;
+    padding-left: 0rem;
+
+  }
+}

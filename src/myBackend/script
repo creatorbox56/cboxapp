@@ -1,0 +1,257 @@
+var myMover1 = [];
+var myMover2 = [];
+var myMover3 = [];
+var myMover4 = [];
+var count;
+var x, y;
+let bool = false;
+var DEFAULT_SIZE = 900;
+var DIM = Math.min(window.innerWidth, window.innerHeight);
+var WIDTH = window.innerWidth;
+var HEIGHT = window.innerHeight;
+var M = DIM / DEFAULT_SIZE // Keep things relative;
+var STEP = 100 * M;
+var z = 50;
+var bg, basic, neon, spotlight;
+let RA, count2;
+let timer = 7;
+let img;
+let angle = 0.0;
+let jitter = 0.0;
+let motion, circles, stripes, stroke, seed;
+let inital = false;
+function setup() {
+seed =11261233130897544;
+bg = #091435;
+basic =#864879;
+neon = #f5d300;
+spotlight = #FBD46D;
+motion =  1;
+circles = 3;
+stripes = 30;
+stroke = 3;
+createCanvas(WIDTH, HEIGHT);
+img = createGraphics(width, height);
+RA = new Random(seed);
+x = width/2;
+y = height/2;
+background(bg);
+count = 0;
+count2 = 0;
+generate();
+}
+function draw() {
+count = count + 1;
+if (count2 == circles) {
+if (frameCount % 60 == 0 && timer > 0) {
+timer--;
+}
+if (timer == 0) {
+background(bg);
+count2 = 0;
+setup();
+timer = 7;
+}
+}
+else{
+exitloop(count, count2);
+}
+if(motion === 1){
+if (second() % 2 === 0) {
+jitter = random(-0.1, 0.1);
+}
+angle = angle + jitter;
+let c = cos(angle);
+background(bg);
+translate(w / 2, h / 2);
+rotate(c);
+image(img, -w / 2, -h / 2);
+}
+else if(motion===0){
+background(bg);
+translate(width / 2, height / 2);
+rotate(frameCount * 0.001);
+image(img, -width / 2, -height / 2);
+}
+drawStuff();
+}
+function drawStuff() {
+for (var i = 0; i < myMover1.length; i++) {
+myMover1[i].update(count);
+for (var j = 0; j < myMover1.length; j++) {
+if (i != j && myMover1[i].distance(myMover1[j])) {
+var v1 = myMover1[i].getPosition();
+var v2 = myMover1[j].getPosition();
+stroke(myMover1[i].getColor());
+img.stroke(myMover1[i].getColor());
+img.line(v1.x, v1.y, v2.x, v2.y);
+}
+}
+if (myMover1[i].isDead()) {
+this.myMover1.splice(i, 1);
+}
+}
+for (var i = 0; i < myMover2.length; i++) {
+myMover2[i].update(count);
+for (var j = 0; j < myMover2.length; j++) {
+if (i != j && myMover2[i].distance(myMover2[j])) {
+var v1 = myMover2[i].getPosition();
+var v2 = myMover2[j].getPosition();
+stroke(myMover2[i].getColor());
+img.stroke(myMover2[i].getColor());
+img.line(v1.x, v1.y, v2.x, v2.y);
+}
+}
+if (myMover2[i].isDead()) {
+this.myMover2.splice(i, 1);
+}
+}
+for (var i = 0; i < myMover3.length; i++) {
+myMover3[i].update(count);
+for (var j = 0; j < myMover3.length; j++) {
+if (i != j && myMover3[i].distance(myMover3[j])) {
+var v1 = myMover3[i].getPosition();
+var v2 = myMover3[j].getPosition();
+stroke(myMover3[i].getColor());
+img.stroke(myMover3[i].getColor());
+img.line(v1.x, v1.y, v2.x, v2.y);
+}
+}
+if (myMover3[i].isDead()) {
+this.myMover3.splice(i, 1);
+}
+}
+for (var i = 0; i < myMover4.length; i++) {
+myMover4[i].update(count);
+for (var j = 0; j < myMover4.length; j++) {
+if (i != j && myMover4[i].distance(myMover4[j])) {
+var v1 = myMover4[i].getPosition();
+var v2 = myMover4[j].getPosition();
+stroke(myMover4[i].getColor());
+img.stroke(myMover4[i].getColor());
+img.line(v1.x, v1.y, v2.x, v2.y);
+}
+}
+if (myMover4[i].isDead()) {
+this.myMover4.splice(i, 1);
+}
+}
+}
+function exitloop(count, count2) {
+if (count > 220 * M && count2 == 1) {
+generate();
+}
+else if (count > 110 * M && count2 == 2) {
+generate();
+}
+else if (count > 60 * M && count2 == 3) {
+generate();
+}
+else if (count > 30 * M && count2 == 4) {
+generate();
+}
+}
+function generate() {
+count = 0;
+count2 = count2 + 1;
+var shapes;
+var i = 0;
+shapes = stripes;
+var strokew = stroke;
+var lifetime = 420 * M / count2;
+if (count2 == 5) {
+lifetime = 10;
+}
+shapes = RA.random_int(20, 50);
+for (i = 0; i < shapes; i++) {
+myMover1[i] = new Mover(x, y, z, basic, lifetime, strokew);
+}
+shapes = RA.random_int(20, 50);
+for (i = 0; i < shapes; i++) {
+myMover2[i] = new Mover(x, y, z, bg, lifetime, strokew);
+}
+shapes = RA.random_int(20, 50);
+for (i = 0; i < shapes; i++) {
+myMover3[i] = new Mover(x, y, z, neon, lifetime, strokew);
+}
+shapes = RA.random_int(20, 50);
+for (i = 0; i < shapes; i++) {
+myMover4[i] = new Mover(x, y, z, spotlight, lifetime, strokew);
+}
+}
+class Random {
+constructor(seed) {
+this.seed = seed;
+}
+random_dec() {
+this.seed ^= this.seed << 13
+this.seed ^= this.seed >> 17
+this.seed ^= this.seed << 5
+return ((this.seed < 0 ? ~this.seed + 1 : this.seed) % 1000) / 1000
+}
+random_between(a, b) {
+return a + (b - a) * this.random_dec()
+}
+random_int(a, b) {
+return Math.floor(this.random_between(a, b + 1))
+}
+random_choice(x) {
+return x[Math.floor(this.random_between(0, x.length * 0.99))]
+}
+}
+function Mover(_x, _y, _z, _c, _lifetime, _strokew) {
+this.x = _x;
+this.y = _y;
+this.z = _z;
+this.g = int(random(0, 4));
+this.color = color(_c);
+this.pos = createVector(_x, _y, _z);
+this.acc = createVector(0, 0);
+this.vel = createVector(0, 0);
+this.lifespan = _lifetime;
+this.strokew = _strokew;
+this.update = function (c) {
+this.acc = createVector(random(-0.01, 0.01), random(-0.01, 0.01));
+this.vel.add(this.acc);
+if (c < 4) {
+this.vel.mult(16);
+} else if (c < 160) {
+this.vel.mult(1.09);
+} else {
+this.vel.mult(1);
+}
+this.pos.add(this.vel);
+this.vel.limit(1.5);
+this.lifespan -= 2;
+};
+this.distance = function (other) {
+let d = p5.Vector.dist(this.pos, other.pos);
+if (d < this.z && d > 5) {
+return true;
+} else {
+return false;
+}
+};
+this.run = function (boids) {
+this.update();
+this.colors();
+this.show();
+this.distance(boids);
+};
+this.show_line = function (other) {
+strokeWeight(this.strokew);
+this.color.setAlpha(190);
+stroke(this.color);
+line(this.pos.x, this.pos.y, other.x, other.y);
+};
+this.isDead = function () {
+return this.lifespan < 0;
+};
+this.getPosition = function () {
+return this.pos;
+};
+this.getColor = function () {
+return this.color;
+};
+}
+; 

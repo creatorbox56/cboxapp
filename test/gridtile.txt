@@ -1,0 +1,12 @@
+  <img src={data.id} alt={data.id} />
+
+   <GridList cellHeight={200} cols={3} style={{ width: 800, height: 600 }}>
+        {wholeArray.map((data) => (
+          <GridListTile key={data.id}>
+            <img src={data.id} alt={data.id} />
+            <p>{data.id}</p>
+          </GridListTile>
+        ))}
+      </GridList>
+
+2459000729095375000

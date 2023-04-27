@@ -1,0 +1,287 @@
+// This is in place of an import statement
+import React, { Component } from 'react'
+import p5 from 'p5'
+const { useRef, useState, useEffect } = React;
+
+const Seed = props => {
+  const containerRef = useRef();
+ 
+  const Sketch = (p) => {
+   //React ref for div reference we pass into p5
+   //sketchRef = React.createRef()
+
+   //P5 instance mode
+   //initSketch = (p) => {
+    let res3;
+    let res2;
+    let index;
+    let h;
+    let seed = "";
+    let sVal = 0;
+    let fruits = [];
+    let middle;
+    let f;
+    let color1;
+    let keylength = 300;
+    let bbutton;
+    let res;
+    let Progress;
+    let progress, progress2;
+    let shapeMove = false;
+    let nseed;
+
+       let tokenData = {
+           hash: "0xd9134c11cd5ed9798ea0811364d63bd850c69c5d13383c9983ade39847e9ea86",
+           tokenId: "99000000",
+         };
+
+         function random_hash() {
+           let chars = "0123456789abcdef";
+           let result = "0x";
+           for (let i = 64; i > 0; --i)
+             result += chars[Math.floor(Math.random() * chars.length)];
+           return result;
+         }
+
+         //Generate inital Seed for Braintube App
+         tokenData = { hash: random_hash() };
+         let iseed = parseInt(tokenData.hash.slice(0, 16), 16);
+         //this.setState({cSeed: iseed});
+
+         class Count {
+          constructor(s, w) {
+             this.s = s;
+            this.w = w;
+            this.p = p.createP("");
+          }
+          start(_res) {
+        /*     if (!this.done) {
+              setInterval(() => this.counter(_res), this.w);
+            } */
+        
+            this.counter(_res, this.w);
+          }
+          counter(res) {
+            if (fruits.length < keylength) {
+              // this.s ++
+              var c = p.color(h, 100, 100);
+              p.fill(c);
+              p.noStroke();
+              p.ellipse(p.mouseX, p.mouseY, 15, 15);
+              this.seed(res);
+              this.s = p.map(fruits.length,0,keylength,0,100);
+              this.s = p.round(this.s)
+              this.p.html(this.s);
+            } 
+          }
+          reset() {
+            this.s = 0;
+            this.p.html(this.s);
+          }
+        
+          seed(res) {
+            if (
+              res == 0 ||
+              res == 1 ||
+              res == 2 ||
+              res == 3 ||
+              res == 4 ||
+              res == 5 ||
+              res == 6 ||
+              res == 7 ||
+              res == 8 ||
+              res == 9
+            ) {
+              res2 = res.toString();
+        
+              fruits.push(res2);
+        
+            } else if (res == 10) {
+              res2 = "a";
+        
+              fruits.push(res2);
+        
+            } else if (res == 11) {
+              res2 = "b";
+        
+              fruits.push(res2);
+        
+            } else if (res == 12) {
+              res2 = "c";
+        
+              fruits.push(res2);
+        
+            } else if (res == 13) {
+              res2 = "d";
+        
+              fruits.push(res2);
+            } else if (res == 14) {
+              res2 = "e";
+        
+              fruits.push(res2);
+            } else if (res == 15) {
+              res2 = "f";
+        
+              fruits.push(res2);
+        
+            }
+          }
+          seed2() {
+            this.s = p.map(fruits.length,0,keylength,0,100);
+            this.s = p.round(this.s)
+            this.p.html(this.s);
+          }
+        }
+
+       function getSeed(){
+           for (var i = 0; i < fruits.length; i++) {
+       
+               seed = seed + fruits[i].toString();
+             }
+             seed = seed.slice(0, 16)
+             fruits.splice(0,fruits.length);
+          
+             return seed;
+       }
+
+
+
+       p.preload = () => {
+
+       }
+
+
+       p.setup = () => {
+
+//let seed = parseInt(tokenData.hash.slice(0, 16), 16);
+
+  p.createCanvas(400, 400);
+  p.colorMode(p.HSB, 360, 100, 100);
+  h = 0;
+  p.background(0);
+  p.counter = new Count(0, keylength);
+  middle = p.height - 30;
+  color1 = p.color(200, 100, 100);
+  p.fill(color1);
+  p.textSize(32);
+  f = p.createP("");
+  p.textFont("monospace");
+  let txt = p.text("Progress Seed: ", 0, middle - 20);
+  p.stroke(color1);
+  p.noFill();
+  p.rect(0, middle, p.width, 20, 15);
+  bbutton = p.createButton("Reset");
+  bbutton.mousePressed(reset);
+    
+       
+   }
+   function reset(){
+
+    //counter = new Count(0, keylength);
+console.log("Reset startet");
+    sVal="";
+    seed="";
+    res="";
+    Progress=0;
+    progress=0;
+    progress2=0;
+    fruits.length = 0;
+    fruits = [];
+    h = 0;
+    p.counter.reset();
+    p.background(0);
+    middle = p.height - 30;
+    color1 = p.color(200, 100, 100);
+    p.fill(color1);
+    p.textSize(32);
+    f = p.createP("");
+    p.textFont("monospace");
+    let txt = p.text("Progress Seed: ", 0, middle - 20);
+    p.stroke(color1);
+    p.noFill();
+    p.rect(0, middle, p.width, 20, 15);
+}
+
+
+  p.resetSketch = () => {
+
+
+   
+  }
+
+
+  p.mousePressed=()=>{
+    shapeMove = true;
+  }
+  p.mouseReleased=()=>{
+    shapeMove = false;
+  }
+   p.mouseDragged = () => {
+    if(shapeMove){
+      if(sVal < keylength && seed==""){
+          sVal = fruits.length;
+
+          //Color
+          if (h == 360) {
+              h = 0;
+            } else {
+              h += 1;
+            }
+
+
+          res = (p.mouseX + p.mouseY) & 15;
+          p.counter.start(res);
+         // counter.seed2();
+         
+         
+          Progress = p.map(sVal, 0, keylength, 0, p.width);
+      
+          p.pbar = p.color(200, 100, 100);
+          p.fill(p.pbar);
+          p.textSize(32);
+          p.textFont("monospace");
+      
+          p.rect(0, middle, Progress, 20, 15);
+          //stroke(color1);
+          p.noFill();
+          var c = p.color(h, 100, 100);
+          p.fill(c);
+          p.noStroke();
+
+          //Seed
+          p.ellipse(p.mouseX, p.mouseY, 15, 15);
+
+        }
+        else if(fruits.length==keylength && seed=="") {
+           
+          seed = getSeed();
+          console.log(seed);
+          let nseed = parseInt(getSeed().slice(0, 16), 16);
+          props.firstViewToParent(nseed);
+           
+        }else if(seed.length == 16){
+            console.log("seed erzeugt");
+           //seed="";
+        }
+       
+  }
+   }
+
+  }
+
+  useEffect(
+    () => {
+      // make sure the p5.js canvas is a child of the component in the DOM
+      let inst = new p5(Sketch, containerRef.current);
+    },
+    // This empty list tells React that this effect never needs to get re-rendered!
+    []
+  );
+
+    // Note: you're going to want to defined an element to contain the p5.js canvas
+    return (
+        <div ref={containerRef}></div>
+      );
+    }
+
+    export default Seed

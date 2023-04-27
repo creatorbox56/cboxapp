@@ -1,0 +1,54 @@
+{/* <div className={styles.conheader}>
+        <header className={styles.header}>
+            <div className={styles.content}>
+
+                <div className={styles.logo}><a href="/"><img src={logo} alt="cboxlogo" width="250"></img></a></div>
+
+                <nav className={`${styles.nav} ${menuOpen ? styles.isMenu : ""}`}>
+                <ul class={styles.menumain} onClick={()=>setOpen(!open)}>
+                <li><a href="#"  onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(open)}>WORK</a>
+                <div class="mega-box">
+                    <div class="content">
+                        <div class="row">
+                            <header>Physical Collection</header>
+                            <ul class="mega-links">
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <header>NFTs</header>
+                            <ul class="mega-links">
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <header>Design Services 2</header>
+                            <ul class="mega-links">
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li><a href="#">Graphics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li><a href="/about"  onMouseEnter={() => setOpen(false)} onMouseLeave={() => setOpen(false)}>ABOUT</a></li>
+                <li><a href="/project-space" onMouseEnter={() => setOpen(false)} onMouseLeave={() => setOpen(false)}>CREATE</a></li>
+                </ul>
+                    <button type="button" className={styles.btn_connect} ><ConnectWallet childToParent={childToParent} /></button>
+                    
+                    </nav>
+                    <div className={styles.toggle}>
+                        {!menuOpen ? <BiMenuAltRight onClick={menuToggleHandler} /> : <AiOutlineClose onClick={menuToggleHandler}/> }
+                        </div>
+                </div>
+              
+            </header>
+            {/* <div className={styles.megam} onMouseLeave={() => setOpen(false)}>{open ? <Megamenu /> : null}</div> */}

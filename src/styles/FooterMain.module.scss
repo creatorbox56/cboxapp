@@ -1,0 +1,54 @@
+@import "../styles/variables.scss";
+
+
+.footer{
+    font-family: $Overpass;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding-top: 3em;
+    color: rgb(194, 194, 194);
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    width: 100%;
+    padding-left:4rem;
+    padding-right:4rem;
+    padding-bottom: 3rem;
+    line-height: 3rem;
+   
+}
+
+.links a{
+ 
+color:rgb(207, 207, 207);
+font-family: $Overpass;
+text-transform: uppercase;
+  
+}
+
+.links a:hover{
+    color: rgb(221, 87, 255);
+}
+
+
+h5{
+
+    margin-bottom: -1.5rem;
+}
+
+img{
+    padding-right: 1.2rem;
+    
+}
+
+
+@media (max-width:792px) {
+    .links{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    img{
+        padding-bottom: 3rem;
+    }
+    
+    }

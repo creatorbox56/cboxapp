@@ -1,0 +1,138 @@
+.Navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.Navbar > .btn {
+    width: 150px;
+    padding: 8px 0;
+ 
+    background: #000000;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    position: absolute;
+    
+  }
+
+.Navbar > .navlogo {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 15px;
+}
+
+.Navbar > .menumain > a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 80px;
+    position: relative;
+    opacity: 0.8;
+}
+
+.Navbar > .menumain > a:hover {
+    opacity: 1;
+}
+
+.Navbar > .menumain > a::before {
+    content:"";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: black;
+    transition: all .45s;
+}
+
+.Navbar > .menumain > a:hover::before {
+    width: 100%;
+}
+
+.Navbar > .navtoggle {
+    display: none;
+}
+
+
+
+nav{
+    background: white;
+    position: fixed;
+    width: 100%;
+
+}
+
+
+header{
+    max-width: 1920px;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 100px;
+    line-height: 65px;
+
+}
+
+ul {
+    display: inline-flex;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li a{
+    list-style: none;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+@media (max-width: 700px){
+ 
+
+    .Navbar > .menumain {
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Navbar > .btn {
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Navbar > .navtoggle {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .navtoggle > .bar {
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background-color: black;
+    }
+}
+
+
+

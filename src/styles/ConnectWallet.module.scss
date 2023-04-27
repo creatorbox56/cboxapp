@@ -1,0 +1,28 @@
+@import "../styles/variables.scss";
+
+.address a{
+
+    color: $light;
+    text-decoration: none;
+
+}
+
+.address a:hover{
+
+    color: $primary;
+
+}
+
+.address a:active{
+
+    color: $primary;
+
+}
+
+@media(max-width: 768px){
+    .address a:hover{
+
+        color: $primary;
+    
+    }
+}

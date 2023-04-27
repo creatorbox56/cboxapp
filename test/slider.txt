@@ -1,0 +1,27 @@
+outtakes
+
+              <Row>
+                <p className="col-4">Price: 0.05 ETH</p>
+                <p className="col-8">Minted: 0 / 333</p>
+              </Row>
+              <Row>
+                <p className="text-param">Parameter</p>
+              </Row>
+              <Row>
+                <p className="col-4">Motion</p>
+                <div id="jslider" className="col-8"></div>
+              </Row>
+              <Row>
+                <p className="col-4">Circles</p>
+                <div id="cslider" className="col-8"></div>
+              </Row>
+
+              <Row>
+                <p className="col-4">Stripes</p>
+                <div id="sslider" className="col-8"></div>
+              </Row>
+
+                <Row>
+                <p className="col-4">Stroke</p>
+                <div id="wslider" className="col-8"></div>
+                </Row>

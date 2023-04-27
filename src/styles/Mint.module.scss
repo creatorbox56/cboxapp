@@ -1,0 +1,29 @@
+@import "../styles/variables.scss";
+
+
+#btn_mint {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0px;
+    font-size: 1rem;
+    font-family: $Overpass;
+    letter-spacing: 2px;
+    background: rgb(3, 3, 3);
+    color: $light;
+    border: 1px solid black;
+    transition: 0.3s ease all;
+    width: 100%;
+    align-self: left;
+    align-items: left;
+    margin-left: 0;
+  }
+
+  #btn_mint:hover{
+    border-color: black;
+    background: rgba(white, 0.5);
+    color: black;
+
+  }

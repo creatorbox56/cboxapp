@@ -1,0 +1,71 @@
+[
+    {
+       "name":"#001",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_001.jpg"
+      
+    },
+      {
+       "name":"#002",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_002.jpg"
+       
+    },
+    {
+       "name":"#003",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_003.jpg"
+      
+    },
+    {
+       "name":"#004",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_004.jpg"
+    },
+    {
+       "name":"#005",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_005.jpg",
+       "profileUrl":"#"
+    },
+    {
+        "name":"#006",
+        "price":"3500,00 €",
+        "description":"Available",
+        "image":"gen03_006.jpg",
+        "profileUrl":"#"
+     },
+    {
+       "name":"#007",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_007.jpg",
+       "profileUrl":"#"
+    },
+    {
+       "name":"#008",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_008.jpg",
+       "profileUrl":"#"
+    },
+    {
+       "name":"#009",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_009.jpg",
+       "profileUrl":"#"
+    },
+    {
+       "name":"#010",
+       "price":"3500,00 €",
+       "description":"Available",
+       "image":"gen03_010.jpg",
+       "profileUrl":"#"
+    }
+ ]
