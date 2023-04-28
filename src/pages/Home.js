@@ -54,7 +54,7 @@ function Home(){
         return (
           <div>
           <Container fluid>
-            <Sketch></Sketch>
+           
             <Row className={styles.section5_desk}>
                 <Col className="col-6-md">
                   <div className={styles.text}>
