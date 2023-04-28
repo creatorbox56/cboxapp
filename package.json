@@ -70,8 +70,8 @@
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
-    "web": "node ./src/index.js",
-    "start": "react-app-rewired start",
+    "web": "node --optimize_for_size --max_old_space_size=460 ./src/index.js",
+    "start": "react-app-rewired --optimize_for_size --max_old_space_size=460 start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
