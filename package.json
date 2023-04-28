@@ -59,7 +59,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
-    "start": "index.js start",
+    "start": "node index.js",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
