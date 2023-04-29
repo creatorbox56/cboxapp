@@ -66,6 +66,7 @@ function Page() {
       <Switch>
             <Route path="/">
                 <Home></Home></Route>
+                <Route index element={<Home></Home>} />
             <Route path="/project-space">
                 <ProjectSpace childToParent={wallet}></ProjectSpace></Route>
             <Route path="/about">
