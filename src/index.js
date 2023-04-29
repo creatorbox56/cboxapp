@@ -57,7 +57,7 @@ function Page() {
   return (
   
 
-    <Router basename="/" history={history}>
+    <Router history={history}>
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
