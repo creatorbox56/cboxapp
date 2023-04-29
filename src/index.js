@@ -56,7 +56,7 @@ function Page() {
   return (
   
 
-    <Router>
+    <Router basename="/directory-name">
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
@@ -64,8 +64,8 @@ function Page() {
       <NavItem link="Upcoming"></NavItem>
      </Navbar> */}
       <Switch>
-            <Route path="/" exact={true} component={Home}>
-                </Route>
+            <Route path="/" exact={true}>
+                <Home></Home></Route>
             <Route path="/project-space">
                 <ProjectSpace childToParent={wallet}></ProjectSpace></Route>
             <Route path="/about">
