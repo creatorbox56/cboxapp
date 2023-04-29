@@ -486,7 +486,7 @@ const Braintube2 = (props) => {
 
       //Send Image to Backend
 
-      p.saveFrames("out", "jpg", 1, 1, function (data) {
+   // p.saveFrames("out", "jpg", 1, 1, function (data) {
         //console.log("Test "+data);
         //console.log(typeof im[0]);
         /*              var data = {
@@ -494,7 +494,7 @@ const Braintube2 = (props) => {
               } */
         //  var data = im[0];
 
-        let res = axios.post("/imageupload", {
+     /*     let res = axios.post("/imageupload", {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -510,11 +510,11 @@ const Braintube2 = (props) => {
                     _complexity: properties[7],
                     _rarity: rarity},
           },
-        });
+        }); */
         //var canvas = $('canvas')[0];
         // var c = canvas; // using jQuery
         // var imageData = c.toDataURL('image/png'); // produces a base64 image string
-      });
+    //  });
       //let data = res.data;
       //Mint._onSubmitMint(res.data);
       // console.log("c"+data);
