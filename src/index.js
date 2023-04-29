@@ -56,7 +56,7 @@ function Page() {
   return (
   
 
-    <Router>
+    <Router basename="/directory-name">
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
@@ -81,6 +81,7 @@ function Page() {
  
       <FooterMain></FooterMain>
     </Router>
+
   );
 }
 ReactDOM.render(<Page />, document.getElementById("root"));
