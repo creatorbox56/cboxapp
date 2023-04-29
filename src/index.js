@@ -56,7 +56,7 @@ function Page() {
   return (
   
 
-    <Router basename="/directory-name">
+    <Router basename="/">
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
