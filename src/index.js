@@ -16,6 +16,7 @@ import About from "./pages/About";
 import Items from "./components/ItemPage";
 import Workitems from "./components/Workitems";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import history from "./components/History";
 import Work2 from "./pages/Work2";
 import {Navbar} from "./components/Navbar";
 import {NavItem} from "./components/NavItem";
@@ -56,7 +57,7 @@ function Page() {
   return (
   
 
-    <Router basename="/">
+    <Router basename="/" history={history}>
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
@@ -64,9 +65,9 @@ function Page() {
       <NavItem link="Upcoming"></NavItem>
      </Navbar> */}
       <Switch>
-            <Route path="/">
+            <Route path="/" exact={true}>
                 <Home></Home></Route>
-                <Route index element={<Home></Home>} />
+             
             <Route path="/project-space">
                 <ProjectSpace childToParent={wallet}></ProjectSpace></Route>
             <Route path="/about">
