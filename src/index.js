@@ -70,8 +70,8 @@ function Page() {
              
             <Route path="/project-space">
                 <ProjectSpace childToParent={wallet}></ProjectSpace></Route>
-            <Route path="/about">
-                <About></About></Route>
+            <Route path="/about" component={About}>
+             </Route>
             <Route path="/item/:id" component={Items}/>
             <Route path="/workitems/:id" component={Workitems}></Route>
             <Route path="/digital"><Digital></Digital></Route>
