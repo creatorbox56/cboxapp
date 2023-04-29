@@ -64,7 +64,7 @@ function Page() {
       <NavItem link="Upcoming"></NavItem>
      </Navbar> */}
       <Switch>
-            <Route path="/" exact={true}>
+            <Route path="/">
                 <Home></Home></Route>
             <Route path="/project-space">
                 <ProjectSpace childToParent={wallet}></ProjectSpace></Route>
