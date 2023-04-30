@@ -57,7 +57,7 @@ function Page() {
   return (
   
 
-    <Router history={history}>
+    <Router>
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
@@ -74,9 +74,9 @@ function Page() {
              </Route>
             <Route path="/item/:id" component={Items}/>
             <Route path="/workitems/:id" component={Workitems}></Route>
-            <Route path="/digital"><Digital></Digital></Route>
-            <Route path="/projects"><Project></Project></Route>
-            <Route path="/work"><Work2></Work2></Route>
+            <Route path="/digital" component={Digital}></Route>
+            <Route path="/projects" component={Project}></Route>
+            <Route path="/work" component={Work2}></Route>
            
             </Switch>
            
