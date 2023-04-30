@@ -68,7 +68,7 @@ function Page() {
             <Route path="/about" component={About}>
              </Route>
             <Route path="/item/:id" component={Items}/>
-            <Route path="/workitems/:id" component={Workitems}></Route>
+            <Route path="/workitems/:id"><Workitems></Workitems></Route>
             <Route path="/digital" component={Digital}></Route>
             <Route path="/projects" component={Project}></Route>
             <Route path="/work" component={Work2}></Route>
