@@ -57,14 +57,9 @@ function Page() {
   return (
   
 
-/*     <Router>
+    <Router>
       <Header2 childToParent={childToParent}/>
-     {/* <Navbar>
-      <NavItem link="Work"></NavItem>
-      <NavItem link="About"></NavItem>
-      <NavItem link="Upcoming"></NavItem>
-     </Navbar> }*/
-    /*  <Switch>
+     <Switch>
             <Route path="/" exact="true" component={Home}>
                 </Route>
              
@@ -77,19 +72,10 @@ function Page() {
             <Route path="/digital" component={Digital}></Route>
             <Route path="/projects" component={Project}></Route>
             <Route path="/work" component={Work2}></Route>
-           
             </Switch>
-           
- 
       <FooterMain></FooterMain>
-    </Router> */
-    <Router>
-    <Header2 childToParent={childToParent}/>
-      <Link to="/" exact="true"><Home></Home>
-      </Link>
-      <Link to="/about"><About></About>
-      </Link>
-    </Router>
+    </Router> 
+
   );
 }
 ReactDOM.render(<Page />, document.getElementById("root"));
