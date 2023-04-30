@@ -1,5 +1,5 @@
 {
-    "root": "build/",
+    "root": "/var/www/cboxapp/build",
     "clean_urls": false,
     "routes": {
       "/**": "index.html"

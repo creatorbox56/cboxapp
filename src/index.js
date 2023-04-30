@@ -16,7 +16,7 @@ import About from "./pages/About";
 import Items from "./components/ItemPage";
 import Workitems from "./components/Workitems";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import history from "./components/History";
+import {Link} from "react-router-dom";
 import Work2 from "./pages/Work2";
 import {Navbar} from "./components/Navbar";
 import {NavItem} from "./components/NavItem";
@@ -57,14 +57,14 @@ function Page() {
   return (
   
 
-    <Router>
+/*     <Router>
       <Header2 childToParent={childToParent}/>
      {/* <Navbar>
       <NavItem link="Work"></NavItem>
       <NavItem link="About"></NavItem>
       <NavItem link="Upcoming"></NavItem>
-     </Navbar> */}
-      <Switch>
+     </Navbar> }*/
+    /*  <Switch>
             <Route path="/" exact="true" component={Home}>
                 </Route>
              
@@ -82,8 +82,14 @@ function Page() {
            
  
       <FooterMain></FooterMain>
+    </Router> */
+    <Router>
+    <Header2 childToParent={childToParent}/>
+      <Link to="/" exact="true"><Home></Home>
+      </Link>
+      <Link to="/about"><About></About>
+      </Link>
     </Router>
-
   );
 }
 ReactDOM.render(<Page />, document.getElementById("root"));
