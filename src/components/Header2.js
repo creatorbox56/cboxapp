@@ -7,6 +7,7 @@ import ConnectWallet from './ConnectWallet';
 import {Megamenu} from './Megamenu.js';
 //import logo from '../creatorbox_logo_sw.svg';
 import logo from '../logo_creatorbox.svg';
+import logo_small from '../logo_small.png'
 import styles from "../styles/Navbar.module.scss";
 import Mailto from "./Mail.js";
 
@@ -38,7 +39,7 @@ const Header = ({childToParent}) => {
             <header className={styles.header}>
                 <div className={styles.container}>
                 <nav className={styles.navigation}>           
-                <div className={styles.logo}><a href="/"><img src={logo} alt="cboxlogo" width="250"></img></a></div>
+                <div className={styles.logo}><a href="/"><img src={logo} alt="cboxlogo" width="250px"></img></a></div>
                 <ul className={`${styles.nav_menu} ${menuOpen ? styles.isMenu : ""}`}>
                 <li className={styles.nav_list}>
                 <div className={styles.nav_list_menu} onClick={()=>setOpen(!open)}>
@@ -102,8 +103,8 @@ const Header = ({childToParent}) => {
           </ul>
           <div className={styles.nav_action}>
             {/* <a href="#!" className={styles.hcontact}>Contact</a> */}
-            <div className={styles.hcontact}>
-            <a href={`mailto:${"hello@creatorbox.de"}?subject=${encodeURIComponent("Hello creatorbox") || ''}&body=${encodeURIComponent("") || ''}`}>Contact</a></div>
+            <div className={styles.hcontact}><span className={styles.animation}>
+            <a href={`mailto:${"hello@creatorbox.de"}?subject=${encodeURIComponent("Hello creatorbox") || ''}&body=${encodeURIComponent("") || ''}`}>Contact</a></span></div>
             {/* <Mailto email="hello@creatorbox.de" subject="Hello creatorbox" body="">
               <div className={styles.hcontact}>Contact</div>
              </Mailto> */}

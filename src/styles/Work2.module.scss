@@ -3,7 +3,6 @@
 .section2 {
   background-color: black;
   color: white;
-  border: 2px solid salmon;
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -11,7 +10,6 @@
 }
 
 .section1 {
-  border: 2px solid salmon;
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -21,7 +19,7 @@
 
 
 .section3 {
-  border: 2px solid salmon;
+
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -30,7 +28,7 @@
 }
 
 .section4 {
-  border: 2px solid salmon;
+
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -295,7 +293,7 @@ h4 {
 }
 @media (max-width:1400px) {
   .section1 {
-    border: 2px solid salmon;
+ 
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -303,7 +301,7 @@ h4 {
   }
 
   .section2 {
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -313,7 +311,7 @@ h4 {
   }
 
   .section4{
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -321,7 +319,7 @@ h4 {
   }
 
   .section3{
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -330,7 +328,7 @@ h4 {
 
   .section5_mobile {
     background-image: url("../images/gen05_001_a.png");
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -345,31 +343,32 @@ h4 {
 
   h2 {
     font-family: $Nexa;
-    font-size: 5em;
+    font-size: 4em;
   }
 
   .gen01 {
-    width: 400px;
-    padding-left: 0rem;
+    width: 340px;
+  
     padding-top: 2rem;
   }
 
   .gen02 {
-    width: 400px;
-    padding-left: 0rem;
+    width: 340px;
+
     padding-top: 0.2rem;
   }
 
 
   .gen03 {
-    width: 200px;
-    padding-left: 0rem;
+    width: 340px;
+
     padding-top: 2rem;
   }
 
   
   .gen04 {
-    width: 420px;
+    padding-top: 2rem;
+    width: 300px;
 
   }
 
@@ -522,7 +521,7 @@ h4 {
   }
   
   .work>.text h2 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 300;
     text-align: left;
     color: white;
@@ -597,21 +596,5 @@ h4 {
     padding-bottom: 1rem;
   }
 
-  .gen01 {
-    width: 420px;
-    padding-left: 0rem;
 
-  }
-
-  .gen02 {
-    width: 420px;
-    padding-left: 0rem;
-  }
-
-
-  .gen03 {
-    width: 420px;
-    padding-left: 0rem;
-
-  }
 }

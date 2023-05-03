@@ -14,16 +14,19 @@ const Footer = () => {
           {/* Column 1 */}
           <div className="col-sm-5">
           <h5>Contact</h5><br></br>
+
               <div className={styles.tm}>
+                Theresa Wilfer<br></br>
                 <Mailto email="hello@creatorbox.de" subject="Hello creatorbox" body="">
                   hello@creatorbox.de
              </Mailto>
+                  Phon: 0151/26071029
               </div>
           </div>
   
           {/* Column 2 */}
           <div className="col-sm-4"><div className={styles.links}> 
-              <a href="#">Imprint</a><br></br>
+              <a href="/imprint">Imprint</a><br></br>
               <a href="#">Data Privacy</a><br></br>
               <a href="#">Terms of Use</a><br></br>
               </div> 

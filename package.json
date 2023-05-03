@@ -30,6 +30,7 @@
     "mdb-react-ui-kit": "^3.0.0",
     "mocha": "^9.2.2",
     "node-blob": "^0.0.2",
+    "openssl": "^2.0.0",
     "os-browserify": "^0.3.0",
     "p5": "^1.4.1",
     "process": "^0.11.10",
@@ -63,8 +64,8 @@
   },
   "scripts": {
     "web": "node ./src/index.js",
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "react-app-rewired --max_old_space_size=4096 start",
+    "build": "react-app-rewired --max_old_space_size=4096 build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },

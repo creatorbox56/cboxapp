@@ -1,0 +1,72 @@
+
+@import "../styles/variables.scss";
+@media (min-width:1400px) {
+.rowbg{
+
+        width: 100%;
+       padding-right: 24rem;
+
+}
+
+.portrait_md{
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+}
+
+.portrait_xs{
+    display: none;
+}
+
+.bio_xs{
+    display: none;
+
+}
+.bio_md{
+    padding-left: 18rem;
+    padding-top: 11rem;
+    h3{
+        font-family: $Nexa;
+        font-size: 3rem;
+    }
+    h4{
+        font-family:$Overpass;
+        color: $dark;
+    }
+    p{
+        padding-bottom: 4rem;
+    }
+}
+}
+@media (max-width:1400px) {
+
+    .bio_md{
+        display: none;
+    }
+
+    .portrait_md{
+        display: none;
+    }
+
+    .portrait_xs{
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        border-radius: 50%;
+    }
+    .bio_xs{
+        padding-left: 2rem;
+        padding-right: 2.1rem;
+        padding-top: 1rem;
+        // background-image: url("../cbox.jpg");
+        // background-size: cover;
+        backdrop-filter: blur(12px);
+        padding-bottom: 3rem;
+        h3{
+            font-family: $Nexa;
+            font-size: 2rem;
+        }
+
+    }
+
+}
+

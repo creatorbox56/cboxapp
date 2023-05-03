@@ -1,20 +1,23 @@
-const express = require('express');
+var express = require('express');
+var https = require('https');
+var http = require('http');
+var fs = require('fs');
+var app = express();
 const path = require('path');
-const app = express();
-const https = require('https');
-const fs = require('fs');
+
 
 app.use(express.static(path.join("/var/www/cboxapp/", 'build')));
+app.use(express.urlencoded({extended: true, limit: '3mb'}));
 
-app.get('/*', function (req, res) {
-  res.sendFile(path.join("/var/www/cboxapp/", 'build', 'index.html'));
+app.get('/*', function(req, res){
+  res.sendFile('/var/www/cboxapp/build' + '/index.html');
 });
+//http.createServer(app).listen(80);
+//https.createServer(options, app).listen(443, console.log("Server running on port 443"));
 
-// we will pass our 'app' to 'https' server
 https.createServer({
-  key: fs.readFileSync('/root/cert/' + 'key.pem', 'utf8'),
-  cert: fs.readFileSync('/root/cert/' + 'cert.pem', 'utf8')
-}, app)
-.listen(443);
-
-//app.listen(80);
+  key: fs.readFileSync('creatorbox_de.key'),
+  cert: fs.readFileSync('creatorbox_de.crt')
+}, app).listen(443, () => {
+  console.log('Listening on Port 443...')
+});

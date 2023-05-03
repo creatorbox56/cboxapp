@@ -20,6 +20,7 @@ import {Link} from "react-router-dom";
 import Work2 from "./pages/Work2";
 import {Navbar} from "./components/Navbar";
 import {NavItem} from "./components/NavItem";
+import Imprint from "./pages/Imprint";
 
 function Page() {
   //const [value1, setValue] = React.useState(1);
@@ -72,6 +73,7 @@ function Page() {
             <Route path="/digital" component={Digital}></Route>
             <Route path="/projects" component={Project}></Route>
             <Route path="/work" component={Work2}></Route>
+            <Route path="/imprint" component={Imprint}></Route>
             </Switch>
       <FooterMain></FooterMain>
     </Router> 
