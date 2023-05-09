@@ -16,19 +16,22 @@ const Footer = () => {
           <h5>Contact</h5><br></br>
 
               <div className={styles.tm}>
-                Theresa Wilfer<br></br>
+                creatorbox<br></br>
+                Theresa Wilfer
                 <Mailto email="hello@creatorbox.de" subject="Hello creatorbox" body="">
                   hello@creatorbox.de
              </Mailto>
-                  Phon: 0151/26071029
+                  Fon: +49 151/260 710 29
               </div>
           </div>
   
           {/* Column 2 */}
-          <div className="col-sm-4"><div className={styles.links}> 
+          <div className="col-sm-4">
+          <h5>Information</h5><br></br>
+            <div className={styles.links}> 
               <a href="/imprint">Imprint</a><br></br>
               <a href="#">Data Privacy</a><br></br>
-              <a href="#">Terms of Use</a><br></br>
+            
               </div> 
           </div>
           {/* Column 3 */}
@@ -45,7 +48,7 @@ const Footer = () => {
               <hr></hr>
               </div>
             </div>
-              <p className="col-sm-4">&copy;{new Date().getFullYear()} creatorbox. All rights reserved
+              <p className="col-sm-4">&copy;{new Date().getFullYear()} creatorbox<br></br>All rights reserved.
               </p>
           </div>
         </div>

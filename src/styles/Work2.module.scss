@@ -1,5 +1,5 @@
 @import "../styles/variables.scss";
-@media (min-width:1400px) {
+@media (min-width:1401px) {
 .section2 {
   background-color: black;
   color: white;
@@ -13,7 +13,7 @@
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
 }
 
 
@@ -23,7 +23,7 @@
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
 
 }
 
@@ -32,7 +32,7 @@
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 
 }
 
@@ -343,12 +343,11 @@ h4 {
 
   h2 {
     font-family: $Nexa;
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .gen01 {
-    width: 340px;
-  
+    width: 350px;
     padding-top: 2rem;
   }
 
@@ -368,7 +367,7 @@ h4 {
   
   .gen04 {
     padding-top: 2rem;
-    width: 300px;
+    width: 340px;
 
   }
 
@@ -497,7 +496,7 @@ h4 {
   
   }
   .label {
-    font-size: 1.6em;
+    font-size: 1.4em;
     border-color: white;
     font-family: $Cutive;
     text-align: left;

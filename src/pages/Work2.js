@@ -207,7 +207,7 @@ function Work2() {
               <div className={styles.parent}>
                 <h3>
                   <div className={styles.stitle}>Price</div>
-                  <span>2150 €</span>
+                  <span>1450 €</span>
                 </h3>
 
                 <div className={styles.verticalrow_dark}></div>

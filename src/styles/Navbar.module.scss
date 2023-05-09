@@ -228,12 +228,23 @@ ul{
 
         padding-left: 0.5rem;
         padding-right: 1rem;
+        margin-left: -2rem;
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+            height: $headerHeight;
+            position: relative;
+            background: var(--white);
+  
+         
+            
  
      
         }
 
     .item_heading{
         font-size: 1rem;
+        
     }
     .item_list_info{
        
@@ -250,13 +261,17 @@ ul{
 
     .logo img{
        
-        width: 170px;
+        width: 200px;
         padding-top: 3.5rem;
+        padding-left: 2rem;
     }
 
+    .hcontact{
+        margin-top: -2.4rem;
+    }
     .hcontact a{
         font-size: 18px;
-        padding-top: -2rem;
+        margin-bottom: -1rem;
     }
     
 
@@ -288,11 +303,12 @@ ul{
         text-align: left;
     }
     .nav_link {
-        padding: 0 2rem;
+        padding: 0 0rem;
+      
         display: flex;
         justify-content: space-between;
         font-size: 1.5rem;
-        align-items: center;
+        align-items: left;
     }
 
 
@@ -300,6 +316,7 @@ ul{
     .dropdowninner {
         padding-left: 0rem;  
         padding-top: 2rem;
+      
         background: transparent;
         padding-bottom: -1rem;
         padding-right: 0rem;
@@ -307,6 +324,7 @@ ul{
     .dropdownitem{
         padding-bottom: 1rem;
         padding-right: 1rem;
+        margin-left: -2rem;
     }
     .dropdown {
         top: 0;    .animation {

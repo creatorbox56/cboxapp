@@ -40,33 +40,13 @@
 @media (max-width:1400px) {
 
     .bio_md{
-        display: none;
+       padding-top: 4rem;
+       padding-left: 4rem;
+       padding-right: 4rem;
+       padding-bottom: 4rem;
     }
 
-    .portrait_md{
-        display: none;
-    }
 
-    .portrait_xs{
-        padding-top: 3rem;
-        padding-left: 2rem;
-        padding-bottom: 1rem;
-        border-radius: 50%;
-    }
-    .bio_xs{
-        padding-left: 2rem;
-        padding-right: 2.1rem;
-        padding-top: 1rem;
-        // background-image: url("../cbox.jpg");
-        // background-size: cover;
-        backdrop-filter: blur(12px);
-        padding-bottom: 3rem;
-        h3{
-            font-family: $Nexa;
-            font-size: 2rem;
-        }
-
-    }
 
 }
 

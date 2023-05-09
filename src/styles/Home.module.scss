@@ -1,53 +1,42 @@
 @import "../styles/variables.scss";
 @media (min-width:1400px) {
-.section2 {
-  background-color: black;
-  color: white;
-  border: 2px solid salmon;
-  padding-top: 10rem;
-  padding-left: 4rem;
-  position: relative;
-  padding-bottom: 4rem;
+
+
+.home{
+ background: rgb(51,0,69);
+ //background:red;
+  z-index: -200;
 }
 
-.section1 {
-  border: 2px solid salmon;
-  padding-top: 10rem;
-  padding-left: 4rem;
-  position: relative;
-  padding-bottom: 4rem;
+.text{
+  padding-top: 7rem;
 }
-
-
-
-.section3 {
-  border: 2px solid salmon;
-  padding-top: 10rem;
-  padding-left: 4rem;
+.col-6-md-left{
+  border: 2px solid yellow;
   position: relative;
-  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-top: 1.4rem;
+  z-index: 2;
+
 
 }
 
-.section4 {
-  border: 2px solid salmon;
-  padding-top: 10rem;
-  padding-left: 4rem;
-  position: relative;
-  padding-bottom: 4rem;
-
-}
 
 .section5_desk{
 
-  padding-bottom: 10rem;
-  padding-top: 10rem;
+  padding-bottom: 5rem;
+ // padding-top: 10rem;
   padding-left: 4rem;
   color: white;
-  background: rgb(255,255,255);
+  z-index: 100;
+  background: rgb(51,0,69);
   background: linear-gradient(-135deg, rgba(255,255,255,0) 0%, rgba(39,0,48,0.10407913165266103) 51%, rgba(23,0,31,1) 100%);
   h2 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 300;
     text-align: left;
     font-family: $Nexa;
@@ -262,6 +251,7 @@ h4 {
   text-align: center;
   align-items: left;
   padding-right: 2.6rem;
+  padding-top: 3rem;
 
   a {
     cursor: pointer;
@@ -297,7 +287,7 @@ h4 {
 }
 @media (max-width:1400px) {
   .section1 {
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -305,7 +295,7 @@ h4 {
   }
 
   .section2 {
-    border: 2px solid salmon;
+ 
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -315,7 +305,7 @@ h4 {
   }
 
   .section4{
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -323,7 +313,7 @@ h4 {
   }
 
   .section3{
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -332,13 +322,13 @@ h4 {
 
   .section5_mobile {
 
-    border: 2px solid salmon;
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     color:white;
     background: rgb(9,8,8);
-background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.725527124912465) 100%);
+    background: rgb(51,0,69);
+    background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.725527124912465) 100%);
   }
 
 
@@ -502,7 +492,7 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
   
   }
   .label {
-    font-size: 1.6em;
+    font-size: 1.4em;
     border-color: white;
     font-family: $Cutive;
     text-align: left;
@@ -510,7 +500,7 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
   }
   
   h3 {
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 100;
     text-align: left;
     margin-bottom: 2rem;
@@ -520,13 +510,13 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
   h3 {
     .stitle {
       font-family: $Overpass;
-      font-size: 0.6em;
+      font-size: 0.5em;
       margin-bottom: -1.5rem;
     }
   }
   
   .work>.text h2 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 300;
     text-align: left;
     color: white;
@@ -579,7 +569,7 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
   
   
   .edition2 {
-    font-size: 1.4em;
+    font-size: 1.2rem;
     font-weight: 100;
     text-align: left;
     margin-top: 1.5rem;

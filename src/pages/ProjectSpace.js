@@ -28,9 +28,12 @@ function ProjectSpace({childToParent}){
       }; */
 
    
-    return <div>
+    return <div  className="create_desk">
+   
         <Row>
+     
           <Col className="col-6-md-left">
+        
            <Braintube2 seed={data} wallet={childToParent}/> 
              
           </Col>
@@ -38,12 +41,18 @@ function ProjectSpace({childToParent}){
             <div className="text2">
               <p className="text-section">Upcoming</p>
               <h2 className="text-title">Braintube</h2>
-              <div className="text-sale">Initial Sale Date: 19. März 2022</div>
-
-              <Row>
-                <p className="col-4">Price: 0.05 ETH</p>
-                <p className="col-8">Minted: 0 / 333</p> 
-              </Row></div>
+              <div className="text-sale">
+              Move your mouse over the seed-pad and squizzle[:skizzle] your own seed.
+              All random parameters are created out of this seed. So the result is your personal braintube.
+              The script as well as the metadata is stored in Arweave for permanent life-long storage. 
+              The Token is minted on the Ethereum Blockchain with the URL to the Arweave Meta Data. For now the Mint Function is disabled
+                until the Release in Automn.
+              </div>
+              {/* <Row>
+                <p className="col-4">Price: -</p>
+                <p className="col-8">Minted: -</p> 
+              </Row> */}
+              </div>
               <Row>
     
                 <Seed firstViewToParent={firstViewToParent} wallet={childToParent} className="col-6-md"/>
@@ -51,6 +60,7 @@ function ProjectSpace({childToParent}){
               </Row>       
 
           </Col>
+         
         </Row> 
         {/* <Row><ImageGallery wallet={childToParent}></ImageGallery> */}
         {/* </Row> */}

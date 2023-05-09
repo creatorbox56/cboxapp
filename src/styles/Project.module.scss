@@ -40,7 +40,7 @@
 
 .section5_desk{
 
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   padding-top: 10rem;
   padding-left: 4rem;
   color: white;
@@ -73,40 +73,6 @@ p {
 }
 
 
-
-.gen01 {
-  width: 500px;
-  padding-left: 1rem;
-  margin-left: 6rem;
-  align-items: flex-end;
-  align-items: bottom;
-
-}
-
-.gen02 {
-  width: 800px;
-  padding-left: 0rem;
-  align-items: center;
-  margin-top: -10rem;
-
-}
-
-.gen03 {
-  width: 700px;
-  padding-left: 1rem;
-  margin-left: 5rem;
-  align-items: flex-end;
-  align-items: bottom;
-
-}
-
-.gen04 {
-  width: 700px;
-  padding-left: 1rem;
-  margin-left: 5rem;
-  align-items: flex-end;
-  align-items: bottom;
-}
 
 
 .label {
@@ -296,49 +262,16 @@ h4 {
 
 }
 @media (max-width:1400px) {
-  .section1 {
-    border: 2px solid salmon;
-    padding-top: 3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 3rem;
-  }
 
-  .section2 {
-    border: 2px solid salmon;
-    padding-top: 3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 3rem;
-    background-color: black;
-    color: white;
-  }
-
-  .section4{
-    border: 2px solid salmon;
-    padding-top: 3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 3rem;
-  }
-
-  .section3{
-    border: 2px solid salmon;
-    padding-top: 3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 3rem;
-  }
 
   .section5_mobile {
 
-    border: 2px solid salmon;
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     color:white;
     background: rgb(9,8,8);
-background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.725527124912465) 100%);
+    background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.725527124912465) 100%);
   }
 
 
@@ -347,32 +280,6 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
    display: none;
   }
 
-
-
-  .gen01 {
-    width: 400px;
-    padding-left: 0rem;
-    padding-top: 2rem;
-  }
-
-  .gen02 {
-    width: 400px;
-    padding-left: 0rem;
-    padding-top: 0.2rem;
-  }
-
-
-  .gen03 {
-    width: 200px;
-    padding-left: 0rem;
-    padding-top: 2rem;
-  }
-
-  
-  .gen04 {
-    width: 420px;
-
-  }
 
   span{
     font-size: 22px;
@@ -520,7 +427,7 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
   h3 {
     .stitle {
       font-family: $Overpass;
-      font-size: 0.6em;
+      font-size: 0.5em;
       margin-bottom: -1.5rem;
     }
   }
@@ -601,21 +508,4 @@ background: linear-gradient(63deg, rgba(9,8,8,1) 22%, rgba(52,0,69,0.72552712491
     padding-bottom: 1rem;
   }
 
-  .gen01 {
-    width: 420px;
-    padding-left: 0rem;
-
-  }
-
-  .gen02 {
-    width: 420px;
-    padding-left: 0rem;
-  }
-
-
-  .gen03 {
-    width: 420px;
-    padding-left: 0rem;
-
-  }
 }

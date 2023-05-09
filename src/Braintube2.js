@@ -92,10 +92,8 @@ const Braintube2 = (props) => {
     var M = DIM / DEFAULT_SIZE; // Keep things relative
     var STEP = 100 * M;
     var x, y;
-    var w = 800;
-    var h = 800;
-    var DEFAULT_SIZE = 900;
-    var DIM = Math.min(window.innerWidth, window.innerHeight);
+    var w = 850;
+    var h = 850;
     let bgColorRGB1;
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
@@ -206,13 +204,13 @@ const Braintube2 = (props) => {
           }; */
 
     p.setup = () => {
-      p.canvasGraphic = p.createGraphics(900, 900);
+      p.canvasGraphic = p.createGraphics(1000, 1000);
       p.currentScale = 1; // initialize to 1; don't touch
       p.currentScale = p.outputScale; // High-Res Export
       // myScaledCanvas = p.createGraphics(currentScale * 900, currentScale * 900);
       // myScaledCanvas.scale(currentScale);
 
-      cnv = p.createCanvas(w, h);
+      cnv = p.createCanvas((p.windowWidth/2)-140, h);
       // p.createCanvas(WIDTH, HEIGHT);
       p.colorMode(p.RGB);
       p.smooth();

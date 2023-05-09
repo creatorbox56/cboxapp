@@ -67,5 +67,19 @@
        "description":"Available",
        "image":"gen03_010.jpg",
        "profileUrl":"#"
-    }
+    },
+    {
+      "name":"#011",
+      "price":"3500,00 €",
+      "description":"Available",
+      "image":"gen03_011.jpg",
+      "profileUrl":"#"
+   },
+   {
+      "name":"#012",
+      "price":"3500,00 €",
+      "description":"Available",
+      "image":"gen03_012.jpg",
+      "profileUrl":"#"
+   }
  ]

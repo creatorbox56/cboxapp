@@ -31,7 +31,7 @@ sketchRef = React.createRef()
     let middle;
     let f;
     let color1;
-    let keylength = 20;
+    let keylength = 200;
     let bbutton;
     let res;
     let Progress;
@@ -156,7 +156,7 @@ sketchRef = React.createRef()
     p.setup = () => {
       //let seed = parseInt(tokenData.hash.slice(0, 16), 16);
 
-      let cnv = p.createCanvas(700, 400);
+      let cnv = p.createCanvas(920, 400);
      
       p.colorMode(p.HSB, 360, 100, 100);
       h = 0;

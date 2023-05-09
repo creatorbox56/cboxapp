@@ -21,18 +21,19 @@
  
 color:rgb(207, 207, 207);
 font-family: $Overpass;
-text-transform: uppercase;
+//text-transform: uppercase;
   
 }
 
 .links a:hover{
-    color: rgb(221, 87, 255);
+    color: rgb(182, 255, 249);
 }
 
 
 h5{
 
     margin-bottom: -1.5rem;
+
 }
 
 img{
@@ -43,12 +44,15 @@ img{
 
 @media (max-width:792px) {
     .links{
-        padding-top: 3rem;
+       
         padding-bottom: 3rem;
     }
 
     img{
         padding-bottom: 3rem;
+    }
+    h5{
+        padding-top: 4rem;
     }
     
     }

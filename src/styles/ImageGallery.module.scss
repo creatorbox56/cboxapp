@@ -1,8 +1,12 @@
 @import "../styles/variables.scss";
 
+@media (min-width:1401px) {
 .imageItem{
     margin: 20px;
 
+}
+.gallery_mobile{
+    display: none;
 }
 
 h1{
@@ -10,13 +14,66 @@ h1{
   
 }
 
+
+
 .ImageList{
     padding-left: 4%;
+ 
+}
+.grid{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    .btn_desk_dark {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        align-items: left;
+  
+        margin-top: 2rem;
+    
+        a {
+          cursor: pointer;
+          justify-content: left;
+          align-content: left;
+          text-align: left;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          transition: 0.5s;
+          padding: 0.75rem 7.3rem 0.2rem 7.5rem;
+          margin-top: 10px;
+          outline: none;
+          border-radius: 0px;
+          font-size: 1rem;
+          font-family: $Overpass;
+          background: transparent;
+          color: $dark;
+          border: 1px solid black;
+          transition: 0.3s ease all;
+          width: 100%;
+          margin-top: 2rem;
+    
+        }
+        
+        a:hover {
+          letter-spacing: 2px;
+          color: $light;
+          background: $dark;
+        }
+    
+      }
 }
 
-.gallery{
+.gallery_desk{
     margin-left: 4%;
     margin-top: 4%;
+    p{
+        margin-bottom: -1rem;
+    }
 }
 
 .gallery2{
@@ -26,4 +83,54 @@ h1{
 
 .spacebottom{
     padding-top: 6rem;
+}
+}
+@media (max-width:1400px) {
+.gallery_desk{
+    display: none;
+}
+.gallery_mobile{
+    p{
+        margin-bottom: -1rem;
+    }
+    .btn_mobile_dark {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        align-items: left;
+        margin-top: -1rem;
+        margin-bottom: 4rem;
+    
+        a {
+          cursor: pointer;
+          justify-content: left;
+          align-content: left;
+          text-align: left;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          transition: 0.5s;
+          padding: 0.75rem 4.3rem 0.2rem 4.5rem;
+          margin-top: 10px;
+          outline: none;
+          border-radius: 0px;
+          font-size: 1rem;
+          font-family: $Overpass;
+          background: transparent;
+          color: $dark;
+          border: 1px solid black;
+          transition: 0.3s ease all;
+          width: 100%;
+          margin-top: 2rem;
+    
+        }
+        
+        a:hover {
+          letter-spacing: 2px;
+          color: $light;
+          background: $dark;
+        }
+    
+      }
+}
 }

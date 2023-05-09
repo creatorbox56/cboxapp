@@ -69,16 +69,17 @@ const Braintube3 = (props) => {
     };
 
     p.windowResized = () => {
+      p.resizeCanvas(p.windowWidth, p.windowHeight);
         p.restart();
           }; 
 
     p.setup = () => {
-    
+      cnv = p.createCanvas(p.windowWidth, p.windowHeight);
     p.restart();
     };
 
     p.restart = function(){
-      cnv = p.createCanvas(p.windowWidth, p.windowHeight);
+    
       cnv.position(0,100);
 
     

@@ -3,7 +3,6 @@
 .section2 {
   background-color: rgb(167,188,169);
   color: black;
-  border: 2px solid salmon;
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -11,7 +10,6 @@
 }
 
 .section1 {
-  border: 2px solid salmon;
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -25,7 +23,7 @@
 
 
 .section3 {
-  border: 2px solid salmon;
+
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -34,7 +32,6 @@
 }
 
 .section4 {
-  border: 2px solid salmon;
   padding-top: 10rem;
   padding-left: 4rem;
   position: relative;
@@ -305,7 +302,6 @@ h4 {
 }
 @media (max-width:1400px) {
   .section1 {
-    border: 2px solid salmon;
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -313,7 +309,7 @@ h4 {
   }
 
   .section2 {
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -323,7 +319,6 @@ h4 {
   }
 
   .section4{
-    border: 2px solid salmon;
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -331,7 +326,7 @@ h4 {
   }
 
   .section3{
-    border: 2px solid salmon;
+
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -340,7 +335,6 @@ h4 {
 
   .section5_mobile {
     background-image: url("../images/gen05_001_a.png");
-    border: 2px solid salmon;
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -358,31 +352,7 @@ h4 {
     font-size: 5em;
   }
 
-  .gen01 {
-    width: 380px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-  }
 
-  .gen02 {
-    width: 420px;
-    padding-left: 2rem;
-    padding-top: 0.2rem;
-  }
-
-
-  .gen03 {
-    width: 200px;
-    padding-left: 2rem;
-    padding-top: 2rem;
-  }
-
-  
-  .gen04 {
-    width: 420px;
-
-  }
 
   .conimage{
     text-align: center;
@@ -509,7 +479,7 @@ h4 {
   
   }
   .label {
-    font-size: 1.6em;
+    font-size: 1.4em;
     border-color: white;
     font-family: $Cutive;
     text-align: left;
@@ -609,19 +579,20 @@ h4 {
   }
 
   .gen01 {
-    width: 420px;
+    width: 350px;
     padding-left: 0rem;
+    padding-top: 2rem;
 
   }
 
   .gen02 {
-    width: 420px;
+    width: 350px;
     padding-left: 0rem;
   }
 
 
   .gen03 {
-    width: 420px;
+    width: 350px;
     padding-left: 0rem;
 
   }

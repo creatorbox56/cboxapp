@@ -54,7 +54,7 @@ function Project(){
                     <div className={styles.verticalrow_light}></div>
                     <h3>
                       <div className={styles.stitle}>Release Date</div>
-                      <span>Autom 2023</span>
+                      <span>Autumn 2023</span>
                     </h3>
                   </div>
                   <br></br>
@@ -62,11 +62,15 @@ function Project(){
                 </div>
                 
                 <p>
-                Braintube is the first project that is created from my website with a seed that you create yourself with the mouse movement. You can create as many versions as you want. At the end you minted the one you like the most. The script as well as the metadata is stored in Arweave for permanent storage. Unlike IPFS, there are no fees to pay and no risk of the data being deleted at some point. 
+                Is everything only imagination and in truth we are only brains in a glass in a giant storage cabinet - called the universe. 
+                So the only thing that gives us a clue to our being is our thoughts. I think - therefore I am (Sokrates).<br></br>
+                Braintube is the visualization of a thought, the materialized flash of mind and pure enery. Every doing starts with a thought.
+                Braintube is the first project that is created with a seed that you create yourself with the movement of your mouse. 
+                You can create as many versions as you want. At the end you mint the one you like the most. 
                 </p>
 
                 <div className={styles.btn_light_desk}>
-                  <a href="/projectspace">EXPLORE</a>
+                  <a href="/project-space">EXPLORE</a>
                 </div>
               </Col>
       
@@ -76,30 +80,30 @@ function Project(){
             <Row className={styles.section5_mobile}>
               <Col className="col-12-md">
                 <div className={styles.text}>
-                  <div className={styles.label}>PopUp Exhibition</div>
-                  <h2>MUNICH ARTHOUSE</h2>
+                  <div className={styles.label}>Upcoming</div>
+                  <h2>Braintube</h2>
     
                   <div className={styles.parent}>
                     <h3>
-                      <div className={styles.stitle}>From</div>
-                      <span>29.04.2023</span>
+                      <div className={styles.stitle}>Chain</div>
+                      <span>Ethereum</span>
                     </h3>
     
                     <div className={styles.verticalrow_light}></div>
                     <h3>
-                      <div className={styles.stitle}>To</div>
-                      <span>01.05.2023</span>
+                      <div className={styles.stitle}>Release Date</div>
+                      <span>Automn 2023</span>
                     </h3>
                   </div>
                   <br></br>
-                  <div className={styles.edition2}>Location: Thomas-Wimmer-Ring 1</div>
+                  <div className={styles.edition2}>Open Edition</div>
                 </div>
                 
                 <p>
-                I'm pleased to participate in the PopUp exhibition Munich Arthouse at "Freddie" at the Isartor. On about 2000 sqm 60 artists present themselves. 
-                Entry is free and the exhibition is open on these 3 days from 11 am - 6 pm.
-                I will exhibit pieces of my Circles Collection (2018 - 2022).
-                </p><br></br>powered by ARTMUC & Optima Firmengruppe
+                Everything could be pure imagination and in truth we are only brains in a jar in a giant storage cabinet - called the universe. 
+                So the only thing that gives us a clue to our being is our thoughts. I think - therefore I am (Sokrates).<br></br>
+                Braintube is the visualization of a thought or the materialized flash of mind and enery. Every doing starts with a thought.
+                </p>
                 <div className={styles.btn_light_mobile}>
                   <a href="/work">EXPLORE</a>
                 </div>

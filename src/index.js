@@ -40,7 +40,7 @@ function Page() {
   const childToParent = (childdata) => {
      
         setWallet(childdata);
-        alert(childdata);
+        //alert(childdata);
     }
 
 

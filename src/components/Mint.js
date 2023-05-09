@@ -107,7 +107,8 @@ export default class Mint extends Component{
     {
         return <Container fluid>
             <Form onSubmit={this._onSubmitMint}>
-                <Button id={styles.btn_mint} variant="dark" type="submit" disabled={this.state.loading}>{this.state.loading ? <Spinner animation="border"></Spinner> : "Mint"}</Button>
+                {/* <Button id={styles.btn_mint} variant="dark" type="submit" disabled={this.state.loading}>{this.state.loading ? <Spinner animation="border"></Spinner> : "Mint"}</Button> */}
+                   <Button id={styles.btn_mint} variant="dark" type="submit" disabled="true">Mint</Button> 
                 </Form>
         </Container>;
     }

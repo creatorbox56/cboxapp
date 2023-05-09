@@ -15,7 +15,8 @@ import ProductInfo04 from '../json/plist04.json'
 import ProductInfo05 from '../json/plist05.json'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import Mailto from "./Mail.js";
+import Button from "react-bootstrap/Button";
 
 class Workitems extends Component {
 
@@ -57,7 +58,30 @@ class Workitems extends Component {
     if(this.id=="gen01"){
     return (
       <Container fluid>
-        <div className={styles.gallery}>
+        <div className={styles.gallery_desk}>
+          <h3>Edition of 12</h3>
+        <Row>
+            {ProductInfo01.map((postDetail, idx) => {
+              return (
+               <Col key={idx} className='col-4-md'>
+                <div className={styles.grid}>
+                    <p>{postDetail.name} {postDetail.description}</p>
+                    <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)} 
+                    width={this.width}
+                    effect="blur"/>
+                             
+                  <div className={styles.btn_desk_dark}><Mailto email="hello@creatorbox.de" subject={"GEN01 "+  postDetail.name} body="">
+                  Purchase request
+                  </Mailto></div>
+                  </div>
+                </Col>
+               )
+           })}
+          
+         </Row>
+         </div>
+
+         <div className={styles.gallery_mobile}>
           <h3>Edition of 12</h3>
         <Row>
             {ProductInfo01.map((postDetail, idx) => {
@@ -65,8 +89,11 @@ class Workitems extends Component {
                <Col key={idx} className='col-4-md'>
                     <p>{postDetail.name} {postDetail.description}</p>
                     <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)} 
-                    width={this.width}
+                    width="350px"
                     effect="blur"/>
+                  <div className={styles.btn_mobile_dark}><Mailto email="hello@creatorbox.de" subject={"GEN01 "+  postDetail.name}  body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
                 </Col>
                )
            })}
@@ -81,7 +108,29 @@ class Workitems extends Component {
     else if(this.id=="gen02"){
       return (
         <Container fluid>
-          <div className={styles.gallery}>
+          <div className={styles.gallery_desk}>
+          <h3>Edition of 12</h3>
+          <Row>
+              {ProductInfo02.map((postDetail, idx) => {
+                return (
+                 <Col key={idx} className='col-4-md'>
+                    <div className={styles.grid}>
+                      <p>{postDetail.name} {postDetail.description}</p>
+                      <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)}  
+                      effect="blur" 
+                      width={this.width}/>
+                  <div className={styles.btn_desk_dark}><Mailto email="hello@creatorbox.de" subject={"GEN02 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
+                  </div>
+                  </Col>
+                 )
+             })}
+            
+           </Row>
+           </div>
+
+           <div className={styles.gallery_mobile}>
           <h3>Edition of 12</h3>
           <Row>
               {ProductInfo02.map((postDetail, idx) => {
@@ -90,7 +139,10 @@ class Workitems extends Component {
                       <p>{postDetail.name} {postDetail.description}</p>
                       <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)}  
                       effect="blur" 
-                      width={this.width}/>
+                      width="350px"/>
+                  <div className={styles.btn_mobile_dark}><Mailto email="hello@creatorbox.de" subject={"GEN02 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
                   </Col>
                  )
              })}
@@ -104,16 +156,41 @@ class Workitems extends Component {
       else if(this.id=="gen03"){
         return (
           <Container fluid>
-            <div className={styles.gallery}>
-            <h3>Edition of 11</h3>
+            <div className={styles.gallery_desk}>
+            <h3>Edition of 12</h3>
+            <Row>
+                {ProductInfo03.map((postDetail, idx) => {
+                  return (
+                   <Col key={idx} className='col-4-md'>
+                      <div className={styles.grid}>
+                        <p>{postDetail.name} {postDetail.description}</p>
+                        <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)}  
+                        width={this.width}
+                        effect="blur"/>
+                  <div className={styles.btn_desk_dark}><Mailto email="hello@creatorbox.de" subject={"GEN03 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
+                  </div>
+                    </Col>
+                   )
+               })}
+              
+             </Row>
+             </div>
+
+             <div className={styles.gallery_mobile}>
+            <h3>Edition of 12</h3>
             <Row>
                 {ProductInfo03.map((postDetail, idx) => {
                   return (
                    <Col key={idx} className='col-4-md'>
                         <p>{postDetail.name} {postDetail.description}</p>
                         <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)}  
-                        width={this.width}
+                        width="350px"
                         effect="blur"/>
+                  <div className={styles.btn_mobile_dark}><Mailto email="hello@creatorbox.de" subject={"GEN03 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
                     </Col>
                    )
                })}
@@ -128,7 +205,28 @@ class Workitems extends Component {
         else if(this.id=="gen04"){
           return (
             <Container fluid>
-              <div className={styles.gallery}>
+              <div className={styles.gallery_desk}>
+              <h3>Edition of 12</h3>
+              <Row>
+                  {ProductInfo04.map((postDetail, idx) => {
+                    return (
+                     <Col key={idx} className='col-4-md'>
+                       <div className={styles.grid}>
+                          <p>{postDetail.name} {postDetail.description}</p>
+                          <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)} 
+                          width={this.width}
+                          effect="blur"/>
+                    <div className={styles.btn_desk_dark}><Mailto email="hello@creatorbox.de" subject={"GEN04 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
+                  </div>
+                      </Col>
+                     )
+                 })}
+                
+               </Row>
+               </div>
+               <div className={styles.gallery_mobile}>
               <h3>Edition of 11</h3>
               <Row>
                   {ProductInfo04.map((postDetail, idx) => {
@@ -136,8 +234,11 @@ class Workitems extends Component {
                      <Col key={idx} className='col-4-md'>
                           <p>{postDetail.name} {postDetail.description}</p>
                           <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)} 
-                          width={this.width}
+                          width="350px"
                           effect="blur"/>
+                  <div className={styles.btn_mobile_dark}><Mailto email="hello@creatorbox.de" subject={"GEN04 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
                       </Col>
                      )
                  })}
@@ -152,16 +253,41 @@ class Workitems extends Component {
           else if(this.id=="gen05"){
             return (
               <Container fluid>
-                <div className={styles.gallery}>
-                  <h3>Edition of 10</h3>
+                <div className={styles.gallery_desk}>
+                  <h3>Edition of 12</h3>
                 <Row>
                     {ProductInfo05.map((postDetail, idx) => {
                       return (
                        <Col key={idx} className='col-3-md'>
+                         <div className={styles.grid}>
                             <p>{postDetail.name} {postDetail.description}</p>
                             <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)} 
                             width={this.width}
                             effect="blur"/>
+                    <div className={styles.btn_desk_dark}><Mailto email="hello@creatorbox.de" subject={"GEN05 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
+                  </div>
+                        </Col>
+                       )
+                   })}
+                  
+                 </Row>
+                 </div>
+                 <div className={styles.gallery_mobile}>
+                  <h3>Edition of 12</h3>
+                <Row>
+                    {ProductInfo05.map((postDetail, idx) => {
+                      return (
+                       <Col key={idx} className='col-3-md'>
+                      
+                            <p>{postDetail.name} {postDetail.description}</p>
+                            <LazyLoadImage src={require(`../images/${this.id}/${postDetail.image}`)} 
+                            width="350px"
+                            effect="blur"/>
+                    <div className={styles.btn_mobile_dark}><Mailto email="hello@creatorbox.de" subject={"GEN05 " + postDetail.name} body={postDetail.name}>
+                  Purchase request
+                  </Mailto></div>
                         </Col>
                        )
                    })}

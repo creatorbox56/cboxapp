@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import p5 from "p5";
 import { ConstructionRounded } from "@mui/icons-material";
+import { red } from "@material-ui/core/colors";
 
 
 // This is in place of an import statement
@@ -72,20 +73,28 @@ const Braintube3 = (props) => {
     var bg_color;
     let myCircles = [];
     let shapes;
-
+    let radius;
     let cwidth, cheight;
     p.preload = () => {
       //load images and shaders here
     };
 
-    p.windowResized = () => {
-        // p.resizeCanvas(p.windowWidth, p.windowHeight);
-        // console.log(p.windowHeight);
-        // centX = p.windowWidth / 2+(p.windowWidth/6);
-        // centY = p.windowHeight / 2;
-        p.restart();
-          }; 
+p.windowResized = () => {
 
+ 
+    p.resizeCanvas(p.windowWidth, p.windowHeight);
+     centX = (p.width / 2)+(p.width/6);
+     centY = p.height / 2;
+     if(p.height > p.width){
+      radius = (p.width / 2) - 140;
+      }
+      else{
+      radius = (p.height / 2) - 200;
+      }
+
+      p.restart();
+    
+}
     p.setup = () => {
     //   cnv = p.createCanvas(p.windowWidth, p.windowHeight);
     //   cnv.position(0,100);
@@ -127,44 +136,46 @@ const Braintube3 = (props) => {
     //     shapes_all--;
     //   }
   
-
-p.restart();
+    cnv = p.createCanvas(p.windowWidth, p.windowHeight);
+            //Max Radius for Outer Circle
+            if(p.height > p.width){
+              radius = (p.width / 2) - 140;
+          }
+          else{
+              radius = (p.height / 2) - 190;
+          }
+         // centX = 200;
+          centY = p.height / 2;
+          p.restart();
     
     };
     
     p.restart = function(){
-        cnv = p.createCanvas(p.windowWidth, p.windowHeight);
+      
+       // p.resizeCanvas(windowWidth, windowHeight);
         cnv.position(0,100);
   
       
-        cnv.style('z-index','-1');
+         cnv.style('z-index','-1');
         // p.createCanvas(WIDTH, HEIGHT);
         p.colorMode(p.RGB);
         p.smooth();
         p.pixelDensity(1);
        // centX = p.width / 2 + (p.width/4);
-        centX = 200;
-        centY = p.height / 2;
+
     
         zoff1 =  p.random(0.001, 0.019);
         phase1 = p.random(0.005, 0.01);
       
-        shapes = p.random(3, 7);
+        shapes = p.random(3, 6);
         //shapes = 10;
-        bg_color = "#330045";
-        p.background(bg_color);
+        bg_color = "#320043";
+       //bg_color="#f44336";
+        //p.background(bg_color);
         //Counter for loops over ColorSet, Start at 1 bc 0 is for bg
         var h = 1;
+    
       
-        //Max Radius for Outer Circle
-        if(p.height > p.width){
-            var radius = (p.width / 2) - 70;
-        }
-        else{
-            var radius = (p.height / 2) - 190;
-        }
-      
-        console.log(radius);
         var sequence = radius / shapes;
         var shapes_all = shapes;
         
@@ -186,7 +197,7 @@ p.restart();
         if(p.height > p.width){
             p.translate((p.width / 2), (p.height / 2));
         }
-        else{p.translate((p.width / 2)+(p.width/5), p.height / 2);}
+        else{p.translate((p.width / 2)+(p.width/4), p.height / 2);}
        
         for (var i = 0; i < myCircles.length; i++) {
           p.beginShape();
@@ -205,16 +216,11 @@ p.restart();
 
      
    }
+
+
+  
   };
 
-  function hexToRgb(hex) {
-    var m = hex.match(/^#?([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i);
-    return {
-      r: parseInt(m[1], 16),
-      g: parseInt(m[2], 16),
-      b: parseInt(m[3], 16),
-    };
-  }
 
   
   useEffect(
