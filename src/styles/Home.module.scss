@@ -9,7 +9,7 @@
 }
 
 .text{
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 .col-6-md-left{
   border: 2px solid yellow;
@@ -28,8 +28,9 @@
 
 .section5_desk{
 
-  padding-bottom: 5rem;
+  //padding-bottom: 5rem;
  // padding-top: 10rem;
+ height: 1000px;
   padding-left: 4rem;
   color: white;
   z-index: 100;
@@ -252,6 +253,7 @@ h4 {
   align-items: left;
   padding-right: 2.6rem;
   padding-top: 3rem;
+ // padding-bottom: 5rem;
 
   a {
     cursor: pointer;
@@ -325,6 +327,7 @@ h4 {
     padding-top: 3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+   
     color:white;
     background: rgb(9,8,8);
     background: rgb(51,0,69);

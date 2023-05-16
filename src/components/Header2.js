@@ -14,6 +14,7 @@ import Mailto from "./Mail.js";
 const Header = ({childToParent}) => {
 
     const [menuOpen, setMenuOPen] = useState(false);
+    const [menuOpen2, setMenuOPen2] = useState(false);
     const [wallet, setWallet] = useState(0);
     const [open, setOpen] = useState(false);
 /*     const childToParent = (data) => {
@@ -26,7 +27,11 @@ const Header = ({childToParent}) => {
         setMenuOPen((p) => !p);
         console.log(menuOpen);
         };
- 
+
+    const menuToggleHandler2 = () => {
+            setMenuOPen2((p) => !p);
+            console.log(menuOpen2);
+            }; 
     
     const handleClick = (num) => {
         setWallet(wallet+1)
@@ -43,11 +48,11 @@ const Header = ({childToParent}) => {
                 <ul className={`${styles.nav_menu} ${menuOpen ? styles.isMenu : ""}`}>
                 <li className={styles.nav_list}>
                 <div className={styles.nav_list_menu} onClick={()=>setOpen(!open)}>
-                    <a href="#" className={styles.nav_link}>
+                <a href="#"  className={styles.nav_link}>
                     <span className={styles.animation}>Work</span>
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </a>
-                    <div className={styles.dropdown}>
+                    <div className={`${styles.dropdown} ${open ? styles.open : ""}`}>
                         <div className={styles.dropdowninner}>
                            {/* <div className={styles.dropdownitem}>
                             <a href="/work"><h2 className={styles.item_heading}>Physical Collections</h2></a>

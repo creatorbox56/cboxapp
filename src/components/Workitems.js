@@ -227,7 +227,7 @@ class Workitems extends Component {
                </Row>
                </div>
                <div className={styles.gallery_mobile}>
-              <h3>Edition of 11</h3>
+              <h3>Edition of 12</h3>
               <Row>
                   {ProductInfo04.map((postDetail, idx) => {
                     return (

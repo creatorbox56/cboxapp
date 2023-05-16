@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import p5 from "p5";
-import { ConstructionRounded } from "@mui/icons-material";
+import { ConstructionRounded, NoiseControlOffSharp } from "@mui/icons-material";
 import { red } from "@material-ui/core/colors";
+import { hexToRgb } from "@material-ui/core";
 
 
 // This is in place of an import statement
@@ -63,7 +64,8 @@ const Braintube3 = (props) => {
     var M = DIM / DEFAULT_SIZE; // Keep things relative
     var centX, centY;
     var bgColorRGB;
-    let cnv;
+    let cnv, cnv2;
+    let h;
     var zoff = 0;
     var zoff1 = 0;
     var STEP = 100 * M
@@ -82,7 +84,7 @@ const Braintube3 = (props) => {
 p.windowResized = () => {
 
  
-    p.resizeCanvas(p.windowWidth, p.windowHeight);
+    p.resizeCanvas(p.windowWidth, p.windowHeight+120);
      centX = (p.width / 2)+(p.width/6);
      centY = p.height / 2;
      if(p.height > p.width){
@@ -136,16 +138,18 @@ p.windowResized = () => {
     //     shapes_all--;
     //   }
   
-    cnv = p.createCanvas(p.windowWidth, p.windowHeight);
+    h= p.windowHeight;
+    cnv = p.createCanvas(p.windowWidth, p.windowHeight+120);
+   
             //Max Radius for Outer Circle
-            if(p.height > p.width){
-              radius = (p.width / 2) - 140;
+            if(hexToRgb > p.width){
+              radius = (h / 2) - 140;
           }
           else{
-              radius = (p.height / 2) - 190;
+              radius = (h / 2) - 190;
           }
          // centX = 200;
-          centY = p.height / 2;
+          centY = h / 2;
           p.restart();
     
     };
@@ -154,7 +158,7 @@ p.windowResized = () => {
       
        // p.resizeCanvas(windowWidth, windowHeight);
         cnv.position(0,100);
-  
+
       
          cnv.style('z-index','-1');
         // p.createCanvas(WIDTH, HEIGHT);
@@ -170,6 +174,7 @@ p.windowResized = () => {
         shapes = p.random(3, 6);
         //shapes = 10;
         bg_color = "#320043";
+       
        //bg_color="#f44336";
         //p.background(bg_color);
         //Counter for loops over ColorSet, Start at 1 bc 0 is for bg
@@ -194,10 +199,10 @@ p.windowResized = () => {
     p.draw = function() {
      
         p.background(bg_color);
-        if(p.height > p.width){
-            p.translate((p.width / 2), (p.height / 2));
+        if(h > p.width){
+            p.translate((p.width / 2), (h / 2));
         }
-        else{p.translate((p.width / 2)+(p.width/4), p.height / 2);}
+        else{p.translate((p.width / 2)+(p.width/4), h / 2);}
        
         for (var i = 0; i < myCircles.length; i++) {
           p.beginShape();
@@ -208,18 +213,18 @@ p.windowResized = () => {
           }
       
           p.endShape(p.CLOSE);
-      
+
         }
       
         phase += phase1
         zoff += zoff1;
 
-     
+       
    }
-
 
   
   };
+
 
 
   
