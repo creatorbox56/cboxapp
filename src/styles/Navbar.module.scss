@@ -293,6 +293,10 @@ ul{
 .dropdown{
     display: none;
 }
+.nav_list_menu:hover .dropdown {
+    clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
+
+}
     .nav_menu {
         top: 0;
         right: 100%;

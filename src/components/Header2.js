@@ -4,12 +4,10 @@ import { useState} from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import ConnectWallet from './ConnectWallet';
-import {Megamenu} from './Megamenu.js';
 //import logo from '../creatorbox_logo_sw.svg';
 import logo from '../logo_creatorbox.svg';
-import logo_small from '../logo_small.png'
 import styles from "../styles/Navbar.module.scss";
-import Mailto from "./Mail.js";
+
 
 const Header = ({childToParent}) => {
 
