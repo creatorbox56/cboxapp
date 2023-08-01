@@ -19,7 +19,7 @@ function Work2() {
       <Row className={styles.section5_desk}>
           <Col className="col-6-md">
             <div className={styles.text}>
-              <div className={styles.label}>Circles (2018 - 2022)</div>
+              <div className={styles.label}>Circles (2018 - 2022) - <a href="https://creatorbox.de/genart/gen05">Live View</a></div>
               <h2>Generation 05</h2>
 
               <div className={styles.parent}>

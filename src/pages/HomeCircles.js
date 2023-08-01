@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../styles/Home.module.scss"
-import Sketch from "../main_towns.js";
+import Sketch from "../mainbg_circles.js";
 //import styles from "../styles/global.scss";
 /* const Image = () => {
     return <img src={banner} alt="artgate image"></img>;
@@ -55,42 +55,39 @@ function Home(){
         return (
           <div>
           <Container fluid>
-          <Sketch></Sketch>
+             <Sketch></Sketch>
             <Row className={styles.section5_desk}>
                 <Col>
                   <div className={styles.text}>
-                    <div className={styles.label}>Digital Collection</div>
-                    <h2>Towns of Moiré</h2>
+                    <div className={styles.label}>Physical Collection</div>
+                    <h2>Circles</h2>
       
                     <div className={styles.parent}>
                       <h3>
-                        <div className={styles.stitle}>Price</div>
-                        <span>3 tez</span>
+                        <div className={styles.stitle}>From</div>
+                        <span>2018</span>
                       </h3>
       
                       <div className={styles.verticalrow_light}></div>
                       <h3>
-                        <div className={styles.stitle}>Release Date</div>
-                        <span>13.07.2023</span>
+                        <div className={styles.stitle}>To</div>
+                        <span>2022</span>
                       </h3>
                     </div>
                     <br></br>
-                    <div className={styles.edition2}>Edition of 99</div>
+                    <div className={styles.edition2}>Only available as Physical Print</div>
                   </div>
                   
                   <p>
-                  The Moiré effect is an optical effect in which a periodic grid is 
-                  created by superimposing regular patterns. This grid 
-                  has special structures that are not present in any of the individual 
-                  patterns and vary when the method of superimposition is changed.<br></br>
-                  Towns of Moiré are a colorful arrangement of lines into geometric 
-                  figures that look like a city or like a collection of skyscrapers. 
-                  The superimposition of the lines creates unique patterns, colors and 
-                  gradients.
+                  This collection contains carefully selected works from 2018 - 2022.
+                  There are 5 different projects presented with the overarching theme "circles".
+                  Even if the result does not always look like a circle, all works have an algorithm as a basis
+                  in which circles are a central element. All pieces are produced only once and are therefore unique.
+                  Each piece is hand-numbered and contains my maker's stamp on the back.
                  </p>
 
                   <div className={styles.btn_light_desk}>
-                    <a href="https://www.fxhash.xyz/generative/28040">EXPLORE</a>
+                    <a href="/work">EXPLORE</a>
                   </div>
                 </Col>
         
